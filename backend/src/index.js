@@ -123,15 +123,6 @@ initializeSigningKey();
 // Advanced API rate limiting and traffic shaping (#traffic-shaping).
 // Token-bucket per endpoint, endpoint prioritization, and backpressure.
 const trafficShaper = createTrafficShaper();
-const capacityPlanner = new CapacityPlanner();>>>>>>> upstream/dev
-
-// Initialize database on startup
-initializeDatabase();
-initializeSigningKey();
-
-// Advanced API rate limiting and traffic shaping (#traffic-shaping).
-// Token-bucket per endpoint, endpoint prioritization, and backpressure.
-const trafficShaper = createTrafficShaper();
 const capacityPlanner = new CapacityPlanner();
 
 // Connect the distributed (Redis) cache layer when REDIS_URL is configured.
